@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33920.266
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxMultiAcc", "RxMultiAcc\RxMultiAcc.csproj", "{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02A05B2A-8DF9-4CEA-A014-8A84F827CF1F}
+	EndGlobalSection
+EndGlobal
