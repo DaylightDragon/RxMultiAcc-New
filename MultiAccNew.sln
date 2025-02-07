@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33920.266
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxMultiAcc", "RxMultiAcc\RxMultiAcc.csproj", "{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiAccNew", "RxMultiAcc\MultiAccNew.csproj", "{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
