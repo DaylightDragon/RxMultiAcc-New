@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Threading;
+using System.Windows.Forms;
+using System.Threading.Tasks;
+
 using static RbxMultiAcc.Winapi;
 using static RbxMultiAcc.Texts;
+using RbxMultiAcc;
 
 namespace RbxMultiAcc
 {
@@ -9,6 +13,8 @@ namespace RbxMultiAcc
     {
         private static readonly String mutexName = "ROBLOX_singletonMutex";
         private static int delayOnError = 5000;
+
+        private static CancellationTokenSource cancellationTokenSource;
 
         [STAThread]
         public static void Main()
@@ -26,11 +32,27 @@ namespace RbxMultiAcc
 
                 Console.WriteLine(TranslateMessageSuccessfullyCreatedMutex());
 
-                while (true)
-                {
-                    Thread.Sleep(int.MaxValue);
-                }
+                TrayIcon trayIcon = new TrayIcon();
+                trayIcon.Init();
+
+                cancellationTokenSource = new CancellationTokenSource();
+                Run(cancellationTokenSource.Token);
+
+                Application.Run();
             }
+        }
+
+        private static void Run(CancellationToken token) {
+            Task.Run(() => {
+                while (!token.IsCancellationRequested) {
+                    Thread.Sleep(100);
+                }
+            });
+        }
+
+        public static void ExitApplication() {
+            cancellationTokenSource?.Cancel();
+            Application.Exit();
         }
     }
 }

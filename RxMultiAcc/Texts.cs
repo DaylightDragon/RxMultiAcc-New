@@ -33,5 +33,23 @@ namespace RbxMultiAcc {
                     return "[Info] Successfully created the mutex, now you should be able to launch multiple game instances at a time.";
             }
         }
+
+        public static string TranslateTrayIconDescription() {
+            switch (culture.TwoLetterISOLanguageName) {
+                case "ru":
+                    return "RbxMultiAcc работает";
+                default:
+                    return "RbxMultiAcc is running";
+            }
+        }
+
+        public static string TranslateTrayIconExitButtonText() {
+            switch (culture.TwoLetterISOLanguageName) {
+                case "ru":
+                    return "Выход";
+                default:
+                    return "Exit";
+            }
+        }
     }
 }
