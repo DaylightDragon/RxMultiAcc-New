@@ -7,7 +7,7 @@
     <ProjectGuid>{51F4C86C-7DD5-4C13-BC12-48DA5A76C5BF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>RbxMultiAcc</RootNamespace>
-    <AssemblyName>RxMultiAcc</AssemblyName>
+    <AssemblyName>RbxMultiAcc</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
